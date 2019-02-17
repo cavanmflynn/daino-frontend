@@ -1,0 +1,8 @@
+<div class="auth-card text-align-center padding-xxl border-width-thin border-style-solid border-color-light background-color-white">
+  <h1>{{ headingKey | translate }}</h1>
+  <p>{{ 'TAGLINE' | translate }}</p>
+  <div class="background-color-light-fg padding-md border-width-thin border-style-solid border-color-light display-flex flex-direction-column">
+    <button @click="authenticateWithTwitter" class="background-color-red-fg color-white border-radius-low padding-md margin-bottom-md">{{ twitterButtonKey | translate }}</button>
+    <button @click="authenticateWithGithub" class="background-color-green-mg color-white border-radius-low padding-md">{{ githubButtonKey | translate }}</button>
+  </div>
+</div>

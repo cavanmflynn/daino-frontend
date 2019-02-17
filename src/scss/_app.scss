@@ -1,0 +1,112 @@
+// HTML & Body Styles
+html, body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 { line-height: 1.2; }
+h1 { font-size: 3em; }
+h2 { font-size: 2.25em; }
+h3 { font-size: 1.5em; }
+
+p { font-size: 1em; }
+
+// General App Styles
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Here only to demonstrate router-link-exact-active (active link highlighting)
+// Move to correct location once beginning development.
+.router-link-exact-active {
+  color: $orange-fg;
+}
+
+// General Button Styles
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: .9rem;
+}
+
+// Landing Styles
+.container {
+  margin: 0 auto;
+  max-width: 1344px;
+}
+
+#landing {
+
+  // HERO
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    .hero-copy,
+    .hero-img {
+      width: 50%;
+    }
+
+    .hero-img img {
+      width: 100%;
+      max-height: auto;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .hero  {
+      flex-direction: column;
+    }
+
+    .hero-img {
+      display: none;
+    }
+  }
+
+  // HOW IT WORKS
+  .how-it-works {
+    padding: 80px 0;
+
+    h2 {
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    ul { 
+      margin: 0; 
+      padding: 0; 
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    ul li {
+      max-width: 30%;
+      text-align: center;
+    }
+
+    ul li img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+      ul  {
+        flex-direction: column;
+      }
+    }
+  }
+}

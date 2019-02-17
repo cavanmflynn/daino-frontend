@@ -1,0 +1,15 @@
+{
+  "HOME": "Home",
+  "AUTH": "Auth",
+  "WELCOME_TO_VUE_BOILERPLATE": "Welcome to vue-boilerplate",
+  "ROUTING_EXAMPLE": "This page is used as a routing example",
+  "TAGLINE": "Reward your favorite content creators with xDAI.",
+  "LOGIN_TO_ACCOUNT": "Log into account",
+  "SIGN_UP_NOW": "Sign up now",
+  "LOGIN_HEADING": "Log in to your account",
+  "SIGN_UP_HEADING": "Sign up",
+  "LOGIN_WITH_TWITTER": "Log in with Twitter",
+  "LOGIN_WITH_GITHUB": "Log in with Github",
+  "SIGN_UP_WITH_TWITTER": "Sign up with Twitter",
+  "SIGN_UP_WITH_GITHUB": "Sign up with Github"
+}

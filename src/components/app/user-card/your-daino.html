@@ -1,0 +1,7 @@
+<div class="your-daino padding-lg width-100 display-flex flex-direction-column align-items-center">
+  <h2 v-if="profileMode">{{ balance }}</h2>
+  <span class="padding-md">This is your personal DAIno page:</span>
+  <a href="" target="_blank"></a>
+  <VueQRCode :text="address" :size="200" color="#D04780" />
+  <button v-clipboard="address" @click="updateCopyButtonText" class="background-color-red-fg color-white border-radius-low padding-md margin-md margin-bottom-md">{{ copyButtonText }}</button>
+</div>

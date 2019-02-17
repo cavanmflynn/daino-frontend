@@ -1,0 +1,19 @@
+// Import fonts
+@import './font-faces';
+
+// Import Anthology core
+@import '../../../node_modules/anthology.scss/anthology.scss';
+
+// Partially import Radar Anthology
+@import './variables';
+@import '../../../node_modules/@radarrelay/radar-anthology/src/scss/lib/functions/all';
+@include A(configure, (
+  'breakpoints': $breakpoints
+));
+@import '../../../node_modules/@radarrelay/radar-anthology/src/scss/properties/all';
+
+// App-specific properties
+@import '../properties/all';
+
+// Emit properties
+@include A(emit, true);

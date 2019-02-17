@@ -1,0 +1,8 @@
+<div class="user-card-header text-align-center background-color-red-fg display-flex flex-direction-column">
+  <img class="display-block padding-lg" :src="imageSrc" />
+  <p class="handle margin-top-0 color-white">@{{ username }}</p>
+  <ul v-if="!profileMode" class="tabs margin-bottom-0 display-inline-flex color-white">
+    <li @click="setActiveTab('dashboard')" class="tab padding-md" :class="{ active: activeTab === 'dashboard' }">Dashboard</li>
+    <li @click="setActiveTab('your_daino')" class="tab padding-md" :class="{ active: activeTab === 'your_daino' }">Your DAIno</li>
+  </ul>
+</div>

@@ -1,0 +1,39 @@
+.user-card {
+  max-width: 40rem;
+
+  &-header {
+    min-height: 10rem;
+
+    img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    .tabs {
+      cursor: pointer;
+      list-style: none;
+
+      .active {
+        border-bottom: 4px solid $green-mg;
+      }
+    }
+  }
+
+  &-body {
+    min-height: 20rem;
+
+    .cash-out {
+      button {
+        width: 10rem;
+      }
+    }
+
+    .your-daino {
+      button {
+        width: 10rem;
+      }
+    }
+  }
+}
