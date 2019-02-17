@@ -39,14 +39,10 @@ export class UserCardHeader extends Vue {
   }
 
   get imageSrc() {
-    if (system.activeUser) {
-      return (
-        system.activeUser.imageSrc ||
-        `https://twitter.com/${
-          system.activeUser.username
-        }/profile_image?size=bigger`
-      );
+    if (system.activeUser && system.activeUser.imageSrc) {
+      return system.activeUser.imageSrc;
     }
+    return 'https://user-images.githubusercontent.com/20102664/52915729-b5505480-3294-11e9-927b-a55b50be2d19.png';
   }
 
   setActiveTab(tab: UserTab) {
