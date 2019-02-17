@@ -18,7 +18,7 @@ export class UserCardHeader extends Vue {
         Website.TWITTER,
         username,
       );
-      this.pollForBalanceUpdates(Website.TWITTER, res.user.username);
+      this.pollForBalanceUpdates(Website.TWITTER, username);
       system.setUser({
         ...res.user,
         username,
